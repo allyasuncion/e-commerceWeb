@@ -135,6 +135,7 @@ body {
         height: 100%;
         object-fit: cover;
         transition: 0.2s;
+        cursor: pointer;
 }
 
 .product-name{
@@ -161,3 +162,117 @@ body {
 
 /* Mid-Section Styles */
 
+.mid-section {
+        width: 100%;
+        height: 800px;
+        padding: 40px 5vw;
+}
+
+.section-item-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 20px;
+}
+
+.section-bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+}
+
+.section-info{
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        display: block;
+        margin-left: auto;
+        padding: 50px;
+        text-align: center;
+        border-radius: 20%;
+}
+
+.title{
+        font-size: 60px;
+        line-height: 100px;
+
+}
+
+.title span{
+        color: #d5be8b;
+
+}
+
+.info{
+        font-family: 'lato', sans-serif;
+        font-size: 25px;
+        line-height: 25px;
+        margin-top: 30px;
+        opacity: 1.5;
+}
+
+/* Image Collage */
+
+.image-mid-section {
+        width: 100%;
+        height: 600px;
+        padding: 50px 5vw;
+
+}
+
+.image-collage {
+        width: 100%;
+        height: 100%;
+        background-image: url(/img/bg-1.png);
+        background-size: cover;
+}
+
+.image-collection {
+        position: relative;
+        display: block;
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        margin: auto;
+
+}
+
+.collage-img{
+        transition: 0.5s;
+        position: absolute;
+        object-fit: cover;
+        border-radius: 5%;
+
+}
+
+.collage-img:nth-child(1){
+        width: 350px;
+        height: 350px;
+        top: 20px;
+        left: 40px;
+
+}
+
+.collage-img:nth-child(2){
+        width: 250px;
+        height: 250px;
+        top: 200px;
+        left: 200px;
+        
+}
+
+.collage-img:nth-child(3){
+        width: 250px;
+        height: 250px;
+        top: 100px;
+        left: 350px;
+        
+}
+
+.collage-img:hover{
+        transform: translateY(-10px);
+        opacity: 0.9;
+}
