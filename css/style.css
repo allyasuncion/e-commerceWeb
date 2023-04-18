@@ -40,6 +40,15 @@ body {
         transition: 0.5s;
 }
 
+.navbar .bg{
+        background: #fff;       
+}
+
+.navbar link{
+        color: black;
+        opacity: 0.5;
+}
+
 .user-interactions {
         display: flex;
         position: absolute;
@@ -94,8 +103,8 @@ body {
         font-size: 25px;
 }
 
-.link.active, .link:hover{
-        opacity: 2;
+.link.active, .link:hover, .navbar.bg .link:hover, .navbar.bg .link:active{
+        opacity: 1;
 }
 
 /* Best Selling Products*/
@@ -192,7 +201,7 @@ body {
         margin-left: auto;
         padding: 50px;
         text-align: center;
-        border-radius: 20%;
+        border-radius: 5%;
 }
 
 .title{
@@ -275,4 +284,105 @@ body {
 .collage-img:hover{
         transform: translateY(-10px);
         opacity: 0.9;
+}
+
+
+/* Review Section */
+.review-section{
+        padding: 50% 5vw;
+}
+
+.section-title span{
+        color: #d5be8b;
+}
+.review-container{
+        margin: 50px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+}
+
+.review-card{
+        width: 250px;
+        height: auto;
+        font-family: 'lato', sans-serif;
+}
+
+.user-dp{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+}
+
+.user-dp img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.user-dp::before{
+        content: '  ';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 4px solid white;
+        border-radius: 50%;
+}
+
+.user-dp::after{
+        content: attr(data-rating);
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        background: #d5be8b;
+}
+
+.review-title{
+        font-size: 20px;
+        line-height: 25px;
+        margin: 30px 0;
+        text-transform: capitalize;
+}
+
+.review{
+        opacity: 0.7;
+}
+
+.end-section{
+        padding: 50px 5vw;
+}
+
+.end-section .section-item-container{
+        height: 800px;
+}
+
+.end-section .section-info{
+        margin: 0;
+}
+
+.end-section .title{
+        font-size: 100px;
+        line-height: 150px;
+        margin: 50px;
+}
+
+.end-section .info{
+        opacity: 0.6;
+}
+
+footer{
+        font-family: 'lato', sans-serif;
+        color: #d5be8b;
+        background: #190c05;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 23px;
 }
