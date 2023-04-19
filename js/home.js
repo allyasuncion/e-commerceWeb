@@ -19,7 +19,7 @@ collageImage.map( (item, i) => {
         item.addEventListener('mouseover', () => {
                 collageImage.map((image, index) => {
                         if(index != i){
-                                image.style.filter = `blur(3px)`;
+                                image.style.filter = `blur(15px)`;
                                 item.style.zIndex = 2;
                         }
                 })
@@ -35,3 +35,4 @@ collageImage.map( (item, i) => {
                 })
         })
 } )
+

@@ -131,7 +131,7 @@ body {
 }
 
 .product-card{
-        border: 15px solid #d5be8b;
+        border: 10px solid #d5be8b;
         width: 300px;
         height: 300px;
         overflow: hidden;
@@ -242,6 +242,7 @@ body {
         height: 100%;
         background-image: url(/img/bg-1.png);
         background-size: cover;
+        border-radius: 5%;
 }
 
 .image-collection {
@@ -267,22 +268,24 @@ body {
         height: 350px;
         top: 20px;
         left: 40px;
-
+        cursor: pointer;
 }
 
 .collage-img:nth-child(2){
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         top: 200px;
         left: 200px;
+        cursor: pointer;
         
 }
 
 .collage-img:nth-child(3){
         width: 250px;
         height: 250px;
-        top: 100px;
+        top: 50px;
         left: 350px;
+        cursor: pointer;
         
 }
 
@@ -390,4 +393,84 @@ footer{
         text-align: center;
         text-transform: capitalize;
         font-size: 23px;
+}
+
+
+/* Order Now Styling */
+
+body {
+        background-image: url('/img/bg-1.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+}
+
+table {
+        width: 80%;
+        margin: 40px auto;
+        /* background-color: blanchedalmond; */
+}
+
+table.list {
+        text-align: center;
+        width: 100%;
+
+}
+
+td {
+        border: 1px solid rgb(204, 200, 200);
+        text-align: left;
+        padding: 8px 15px;
+        background: rgb(204, 200, 200);
+        border-radius: 3%;
+} 
+
+tr:nth-child(even), table.list thread> tr {
+        background-color: rgb(204, 200, 200);
+} 
+
+input[ type="text" ], input[ type="number" ]{
+        width: 91%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(165, 161 ,161);
+        border-radius: 20px;
+
+}
+
+input[ type="submit" ], input[ type="reset" ]{
+        width: 20%;
+        padding: 6px 12px;
+        margin: 15px 0 10px;
+        display: inline-block;
+        border: 1px solid rgb(165, 161 ,161);
+        border-radius: 50px;
+        font-size: 1rem;
+        cursor: pointer;
+        outline: none;
+}
+
+input[type="submit"]:hover{
+        background: #4b99d8;
+}
+
+input[type="reset"]:hover{
+        background: #4b99d8;
+}
+
+button{
+        background: #eee;
+        padding:6px 12px;
+        margin:15px 0 10px;
+        display: inline-block;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        outline: none;
+}
+
+button:hover{
+        background: #4b99d8;
 }
