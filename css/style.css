@@ -40,7 +40,7 @@ body {
         transition: 0.5s;
 }
 
-.navbar .bg{
+.navbar.background{
         background: #fff;       
 }
 
@@ -103,7 +103,12 @@ body {
         font-size: 25px;
 }
 
-.link.active, .link:hover, .navbar.bg .link:hover, .navbar.bg .link:active{
+.navbar.background .link{
+        color: black;
+        opacity: 0.5;
+}
+
+.link.active, .link:hover, .navbar.background .link:hover, .navbar.background .link:active{
         opacity: 1;
 }
 
